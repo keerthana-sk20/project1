@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: limegreen;
+    text-shadow: 2px 2px black;
+}
+
+.bike-container {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 0 20px limegreen;
+    overflow: hidden;
+}
+
+.bike-container img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ride 4s linear infinite alternate;
+}
+
+@keyframes ride {
+    from {
+        transform: translate(-60%, -50%) scale(1);
+    }
+    to {
+        transform: translate(-40%, -50%) scale(1.05);
+    }
+}
+
+.details {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.details p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.highlight {
+    color: lime;
+}
